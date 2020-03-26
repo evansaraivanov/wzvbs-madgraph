@@ -1,0 +1,221 @@
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c      written by the UFO converter
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+ckmblock 1 mdl_cabi
+
+ckmblock 2 mdl_CKM11
+
+ckmblock 3 mdl_CKM12
+
+ckmblock 4 mdl_CKM13
+
+ckmblock 5 mdl_CKM21
+
+ckmblock 6 mdl_CKM22
+
+ckmblock 7 mdl_CKM23
+
+ckmblock 8 mdl_CKM31
+
+ckmblock 9 mdl_CKM32
+
+ckmblock 10 mdl_CKM33
+
+newcoup 0 mdl_Lambda
+
+newcoup 1 mdl_cw
+
+newcoup 2 mdl_cG
+
+newcoup 3 mdl_cWtil
+
+newcoup 4 mdl_cGtil
+
+newcoup 5 mdl_cH
+
+newcoup 6 mdl_cHBox
+
+newcoup 7 mdl_cHDD
+
+newcoup 8 mdl_cHB
+
+newcoup 9 mdl_cHW
+
+newcoup 10 mdl_cHWB
+
+newcoup 11 mdl_cHG
+
+newcoup 12 mdl_cHBtil
+
+newcoup 13 mdl_cHWtil
+
+newcoup 14 mdl_cHWBtil
+
+newcoup 15 mdl_cHGtil
+
+newcoup 16 mdl_CtHAbs
+
+newcoup 17 mdl_CtHPh
+
+newcoup 18 mdl_CbHAbs
+
+newcoup 19 mdl_CbHPh
+
+newcoup 20 mdl_CtBAbs
+
+newcoup 21 mdl_CtBPh
+
+newcoup 22 mdl_CtWAbs
+
+newcoup 23 mdl_CtWPh
+
+newcoup 24 mdl_CtGAbs
+
+newcoup 25 mdl_CtGPh
+
+newcoup 26 mdl_CbBAbs
+
+newcoup 27 mdl_CbBPh
+
+newcoup 28 mdl_CbWAbs
+
+newcoup 29 mdl_CbWPh
+
+newcoup 30 mdl_CbGAbs
+
+newcoup 31 mdl_CbGPh
+
+newcoup 32 mdl_CHq1a
+
+newcoup 33 mdl_CHQ3a
+
+newcoup 34 mdl_CHl1a
+
+newcoup 35 mdl_CHL3a
+
+newcoup 36 mdl_CHua
+
+newcoup 37 mdl_CHda
+
+newcoup 38 mdl_CHea
+
+newcoup 39 mdl_CHudAbs
+
+newcoup 40 mdl_CHudPh
+
+newcoup 41 mdl_Clla
+
+newcoup 42 mdl_Cllb
+
+newcoup 43 mdl_Cqq1a
+
+newcoup 44 mdl_Cqq1b
+
+newcoup 45 mdl_CQQ3a
+
+newcoup 46 mdl_CQQ3b
+
+newcoup 47 mdl_Clq1a
+
+newcoup 48 mdl_CLQ3a
+
+newcoup 49 mdl_Cuua
+
+newcoup 50 mdl_Cuub
+
+newcoup 51 mdl_Cdda
+
+newcoup 52 mdl_Cddb
+
+newcoup 53 mdl_Ceea
+
+newcoup 54 mdl_Cud1a
+
+newcoup 55 mdl_CUD8a
+
+newcoup 56 mdl_Ceua
+
+newcoup 57 mdl_Ceda
+
+newcoup 58 mdl_Cqu1a
+
+newcoup 59 mdl_CQU8a
+
+newcoup 60 mdl_Cqd1a
+
+newcoup 61 mdl_CQD8a
+
+newcoup 62 mdl_Clea
+
+newcoup 63 mdl_Clua
+
+newcoup 64 mdl_Clda
+
+newcoup 65 mdl_Cqea
+
+newcoup 66 mdl_Cquqd1aAbs
+
+newcoup 67 mdl_Cquqd1aPh
+
+newcoup 68 mdl_CQUQD8aAbs
+
+newcoup 69 mdl_CQUQD8aPh
+
+newcoupaux 0 mdl_WC
+
+sminputs 2 mdl_Gf
+
+sminputs 3 aS
+
+yukawa 1 mdl_ymdo
+
+yukawa 2 mdl_ymup
+
+yukawa 3 mdl_yms
+
+yukawa 4 mdl_ymc
+
+yukawa 5 mdl_ymb
+
+yukawa 6 mdl_ymt
+
+yukawa 11 mdl_yme
+
+yukawa 13 mdl_ymm
+
+yukawa 15 mdl_ymtau
+
+frblock 1 mdl_appZERO
+
+mass 23 mdl_MZ
+
+mass 24 mdl_MW
+
+mass 11 mdl_Me
+
+mass 13 mdl_MMU
+
+mass 15 mdl_MTA
+
+mass 2 mdl_MU
+
+mass 4 mdl_MC
+
+mass 6 mdl_MT
+
+mass 1 mdl_MD
+
+mass 3 mdl_MS
+
+mass 5 mdl_MB
+
+mass 25 mdl_MH
+
+decay 23 mdl_WZ
+
+decay 24 mdl_WW
+
+decay 6 mdl_WT
+
+decay 25 mdl_WH
