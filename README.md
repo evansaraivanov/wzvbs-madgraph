@@ -43,4 +43,4 @@ If you would like to use root analysis, run
 
 You can set analysis packages here to the one of your choice. Reweight and Spin are not used and should be OFF. Next, you can also edit the cards here, but if you have done that before, you can skip this. After that, the events should be generating, which takes about 10-20 minutes for me.
 
-6. The root file is stored in output/Runs/run_xx. The python script above will read electron and positron pT from the file, and make a plot using a SM, SMEFT total with cw=+-1. 
+6. The root file is stored in output/Runs/run_xx. The python script above will read electron and positron pT from the file, and make a plot using a SM, SMEFT total with cw=+-1. Make sure to adjust the directories to your own.
