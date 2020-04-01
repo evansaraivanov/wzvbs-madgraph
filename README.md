@@ -19,9 +19,9 @@ Instructions:
 
 You will need to change the NP value in line 16 to correspond with which term you would like to generate. More info found here (https://arxiv.org/pdf/1709.06492.pdf)
 
-SM: NP==0
-Interference: NP^2==1
-EFT (quadratic): NP==1
+SM: NP==0,  
+Interference: NP^2==1,  
+EFT (quadratic): NP==1,  
 Total: NP<=1
 
 Finally, set the output to your choice.
