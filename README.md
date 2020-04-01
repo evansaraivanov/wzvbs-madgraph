@@ -13,7 +13,7 @@ The cards have changes from default values. In run card, the changes are in cuts
 Full process directories can be found on the follow google drive link (https://drive.google.com/drive/u/2/folders/1dfcebeW1XrWNl6G8tJm_6dAHqft2VYmC)
 
 Instructions:
-1. Install madgraph v2.6.x (https://launchpad.net/mg5amcnlo). Extract the files, and cd into the new directory.
+1. Install madgraph v2.6.x (https://launchpad.net/mg5amcnlo). Extract the files from the tarball, and cd into the new directory.
 
 2. Open smeft-sim-cw-tot . This is only a text file that contains madgraph commands. The set commands are setting up correct madgraph configuration. The import model will automatically download the SMEFT model if you do not already have it. The define lines will make sure multi-particle definitions are consistent between everyone. The generate line will generate all Feynman diagrams for the defined process. In this case, it is the inclusive cross section. 
 
