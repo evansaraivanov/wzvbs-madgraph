@@ -38,7 +38,6 @@ If you would like to use root analysis, run
 5. cd to your output directory set earlier. run madevent and generate the events.
 
 > python2 ./bin/madevent
-
 > generate_events
 
 You can set analysis packages here to the one of your choice. Reweight and Spin are not used and should be OFF. Next, you can also edit the cards here, but if you have done that before, you can skip this. After that, the events should be generating, which takes about 10-20 minutes for me.
