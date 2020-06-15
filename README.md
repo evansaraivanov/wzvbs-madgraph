@@ -1,8 +1,8 @@
-# wzvbs-madgraph
+# MadGraph tutorial and WZ VBS guide
 
 Note: The Cards folder is outdated as of now. The commit was made before I knew the madgraph configuration.
 
-Included here is an example of:
+Included in this repo is an example of:
 1. script to generate events
 2. run card
 3. param card
@@ -12,8 +12,29 @@ The cards have changes from default values. In run card, the changes are in cuts
 
 Full process directories can be found on the follow google drive link (https://drive.google.com/drive/u/2/folders/1dfcebeW1XrWNl6G8tJm_6dAHqft2VYmC)
 
-Instructions:
-1. Install madgraph v2.6.x (https://launchpad.net/mg5amcnlo). Extract the files from the tarball, and cd into the new directory.
+For reference, here are the slides:
+
+# Instructions
+
+1. Make sure you have a fortran compiler, like gcc-fortran, and python2. For analysis, root or pyroot is usually used in this group.
+
+2. Install madgraph v2.6.x (https://launchpad.net/mg5amcnlo/+download). Extract the files from the tarball to your desired location, and cd into the new directory. To start madgraph use
+
+> python2 bin/mg5_aMC
+
+You should be in the madgraph program, the terminal should display an input line that looks something like this
+
+> MG5_aMC>
+
+# Introductory tutorial
+
+madgraph has a good built in tutorial for p p > t t~. To begin this tutorial, simply type tutorial into madgraph.
+
+> tutorial
+
+It should print steps to help guide you to determine the cross section of this process.
+
+# WZ VBS guide
 
 2. Open smeft-sim-cw-tot . This is only a text file that contains madgraph commands. The set commands are setting up correct madgraph configuration. The import model will automatically download the SMEFT model if you do not already have it. The define lines will make sure multi-particle definitions are consistent between everyone. The generate line will generate all Feynman diagrams for the defined process. In this case, it is the inclusive cross section. 
 
