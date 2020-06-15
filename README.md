@@ -16,6 +16,8 @@ For reference, here are the slides: https://docs.google.com/presentation/d/1k3s4
 
 # Instructions
 
+I highly reccomend people using Windows to set up a linux install or linux virtual machine. 
+
 1. Make sure you have a fortran compiler, like gcc-fortran, and python2. For analysis, root or pyroot is usually used in this group.
 
 2. Install madgraph v2.6.x (https://launchpad.net/mg5amcnlo/+download). Extract the files from the tarball to your desired location, and cd into the new directory. To start madgraph use
