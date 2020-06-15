@@ -36,7 +36,7 @@ madgraph has a good built in tutorial for p p > t t~. To begin this tutorial, si
 
 It should print steps to help guide you to determine the cross section of this process.
 
-If you would like, you can edit the beam energies in run_card.dat and see how that effects the cross section. The top quark a very massive quark, so how would you expect the cross section to depend on the beam energy? The most recent LHC run was at a center-of-mass energy of 13 TeV, but older runs were lower energy. The first run was about 900 GeV beam energy (or 1.8 TeV center-of-mass energy), what would the cross section be in this case? How about higher energies?
+If you would like, you can edit the beam energies in run_card.dat and see how that effects the cross section. The top quark a very massive quark, so how would you expect the cross section to depend on the beam energy? The most recent LHC run was at a center-of-mass energy of 13 TeV, but older runs were lower energy. The earliest run was about 900 GeV beam energy (or 1.8 TeV center-of-mass energy), what would the cross section be in this case? How about higher energies?
 
 To analyze the results, you can install MadAnalysis5, or ExRootAnalysis. Most groups will use root in their analysis, but you can stick with what you prefer for this. If you do not use root, you will have to read the output .lhe file, which is a text file, and parse it for the information you need.
 
