@@ -40,7 +40,7 @@ If you would like, you can edit the beam energies in run_card.dat and see how th
 
 To analyze the results, you can install MadAnalysis5, or ExRootAnalysis. Most groups will use root in their analysis, but you can stick with what you prefer for this. If you do not use root, you will have to read the output .lhe file, which is a text file, and parse it for the information you need.
 
-Either way, you will need to know the particle id's (http://pdg.lbl.gov/2007/reviews/montecarlorpp.pdf) where the anti-particles take the negative value of the particle ID. The example script reads many madgraph runs and plots a histogram of the transverse momentum of particles with id +11 and -11, which correspond to electrons and positrons.
+Either way, you will need to know the particle id's (http://pdg.lbl.gov/2007/reviews/montecarlorpp.pdf) where the anti-particles take the negative value of the particle ID. The example script reads many madgraph runs and plots a histogram of differential cross section as a function of the transverse momentum of particles with id +11 and -11, which correspond to electrons and positrons.
 
 # WZ VBS guide
 
