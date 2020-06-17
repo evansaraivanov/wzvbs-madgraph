@@ -30,7 +30,7 @@ You should be in the madgraph program, the terminal should display an input line
 
 # Introductory tutorial
 
-madgraph has a good built in tutorial for p p > t t~. To begin this tutorial, simply type tutorial into madgraph.
+madgraph has a good built in tutorial for p p > t t~ (top anti-top quark production). To begin this tutorial, simply type tutorial into madgraph.
 
 > tutorial
 
