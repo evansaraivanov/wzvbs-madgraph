@@ -75,3 +75,7 @@ Then to automate the setup of multiparticles, importing of the model, and genera
 You can set analysis packages here to the one of your choice. Reweight and Spin are not used and should be OFF. Next, you can also edit the cards here, but if you have done that before, you can skip this. After that, the events should be generating, which takes about 10-20 minutes for me on a mid-tier laptop.
 
 6. The root file is stored in output/Runs/run_xx. The python script above will read electron and positron pT from the file, and make a plot using a SM, SMEFT total with cw=+-1. Make sure to adjust the directories to your own.
+
+# WZ scattering with EWdim6 model
+
+The EWdim6 model will generate diagrams with dimension 6 operators, which allow for triple boson coupling, as well as dimension 4 operators. Generate the same process using this new model (no need to specify NP). There are 5 dim6 operators, check how each one effects the cross section. Compare the differential cross section w.r.t pt for each.
