@@ -18,15 +18,18 @@ For reference, here are the slides: https://docs.google.com/presentation/d/1k3s4
 
 I highly reccomend people using Windows to set up a linux install or linux virtual machine. 
 
-1. Make sure you have a fortran compiler, like gcc-fortran, and python2. For analysis, root or pyroot is usually used in this group.
-
-2. Install madgraph v2.6.x (https://launchpad.net/mg5amcnlo/+download). Extract the files from the tarball to your desired location, and cd into the new directory. To start madgraph use
+1. Install madgraph v2.6.x (https://launchpad.net/mg5amcnlo/+download). Extract the files from the tarball to your desired location, and cd into the new directory. To start madgraph use
 
 > python2 bin/mg5_aMC
 
 You should be in the madgraph program, the terminal should display an input line that looks something like this
 
 > MG5_aMC>
+
+2. Make sure you have a fortran compiler, like gcc-fortran, and python2. For analysis, you will require root (https://root.cern.ch/) or madanalysis5 (https://madanalysis.irmp.ucl.ac.be/wiki/tutorials). You must install root using either a provided binary or from source before it can be used for analysis. MadAnalysis requires matplotlib to be able to make plots. Install either analysis package using the following in madgraph.
+
+> install MadAnalysis5
+> install ExRootAnalysis
 
 # Introductory tutorial
 
@@ -38,9 +41,22 @@ It should print steps to help guide you to determine the cross section of this p
 
 If you would like, you can edit the beam energies in run_card.dat and see how that effects the cross section. The top quark a very massive quark, so how would you expect the cross section to depend on the beam energy? The most recent LHC run was at a center-of-mass energy of 13 TeV, but older runs were lower energy. The earliest run was about 900 GeV beam energy (or 1.8 TeV center-of-mass energy), what would the cross section be in this case? How about higher energies?
 
-To analyze the results, you can install MadAnalysis5, or ExRootAnalysis. Most groups will use root in their analysis, but you can stick with what you prefer for this. If you do not use root, you will have to read the output .lhe file, which is a text file, and parse it for the information you need.
+To analyze the results, you can install MadAnalysis5, or ExRootAnalysis. Most groups will use root in their analysis, but you can stick with what you prefer for this.
 
-Either way, you will need to know the particle id's (http://pdg.lbl.gov/2007/reviews/montecarlorpp.pdf) where the anti-particles take the negative value of the particle ID. The example script reads many madgraph runs and plots a histogram of differential cross section as a function of the transverse momentum of particles with id +11 and -11, which correspond to electrons and positrons.
+For root, you will need to know the particle id's (http://pdg.lbl.gov/2007/reviews/montecarlorpp.pdf) where the anti-particles take the negative value of the particle ID. The example script reads many madgraph runs and plots a histogram of differential cross section as a function of the transverse momentum of particles with id +11 and -11, which correspond to electrons and positrons.
+
+If using mad analysis, making kinematic plots is straight forward. First, cd to the run you want to analyze in the output directory you specified (output/Events/run_xx). Start mad analysis.
+
+>python2 ../../../../HEPTools/madanalysis5/madanalysis5/bin/ma5
+
+After this starts import the unweighted_events.lhe.gz file, define the top quark multiparticle to include both top and anti-top quarks. Then specify the observable to plot, then submit the job.
+
+> define to = t t~
+> import unweighted_events.lhe.gz
+> plot PT(to)
+> submit
+
+A window should appear in you browser after that is completed.
 
 # WZ VBS guide
 
@@ -57,11 +73,7 @@ Finally, set the output to your choice.
 
 3. Run madgraph with the script.
 
-If you would like to use root analysis, run
-
-> install ExRootAnalysis
-
-Then to automate the setup of multiparticles, importing of the model, and generating the processes, use the following.
+To automate the setup of multiparticles, importing of the model, and generating the processes, use the following. Point mg5 to the script in this repository.
 
 > python2 ./bin/mg5_aMC $PATH_TO_SCRIPT
 
@@ -78,4 +90,4 @@ You can set analysis packages here to the one of your choice. Reweight and Spin 
 
 # WZ scattering with EWdim6 model
 
-The EWdim6 model will generate diagrams with dimension 6 operators, which allow for triple boson coupling, as well as dimension 4 operators. Generate the same process using this new model (no need to specify NP). There are 5 dim6 operators, check how each one effects the cross section. Compare the differential cross section w.r.t pt for each.
+The EWdim6 model will generate diagrams with dimension 6 operators, which allow for triple boson coupling, as well as dimension 4 operators. Generate the same process using this new model (no need to specify NP). There are 5 dim6 operators, check how each one effects the cross section. If using root, compare the differential cross section w.r.t pt for each. For everyone, try plotting electron/positron pt and muon pt distributions.
