@@ -29,7 +29,7 @@ You should be in the madgraph program, the terminal should display an input line
 2. Make sure you have a fortran compiler, like gcc-fortran, and python2. For analysis, you will require root (https://root.cern.ch/) or madanalysis5 (https://madanalysis.irmp.ucl.ac.be/wiki/tutorials). You must install root using either a provided binary or from source before it can be used for analysis. MadAnalysis requires matplotlib to be able to make plots. Install either analysis package using the following in madgraph.
 
 > install MadAnalysis5
-> install ExRootAnalysis
+install ExRootAnalysis
 
 # Introductory tutorial
 
