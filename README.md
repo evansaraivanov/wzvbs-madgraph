@@ -61,6 +61,8 @@ If you would like to use root analysis, run
 
 > install ExRootAnalysis
 
+Then to automate the setup of multiparticles, importing of the model, and generating the processes, use the following.
+
 > python2 ./bin/mg5_aMC $PATH_TO_SCRIPT
 
 4. Now you will want to edit the cards. You can copy the param_card.dat and run_card.dat from here, or edit your own to match. The changes in run_card.dat are in the cuts section. param_card.dat should be edited based on your run preferences. To replicate results, set all coefficients except for the one of interest to 0.
