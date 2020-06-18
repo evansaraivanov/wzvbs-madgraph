@@ -29,7 +29,8 @@ You should be in the madgraph program, the terminal should display an input line
 2. Make sure you have a fortran compiler, like gcc-fortran, and python2. For analysis, you will require root (https://root.cern.ch/) or madanalysis5 (https://madanalysis.irmp.ucl.ac.be/wiki/tutorials). You must install root using either a provided binary or from source before it can be used for analysis. MadAnalysis requires matplotlib to be able to make plots. Install either analysis package using the following in madgraph.
 
 > install MadAnalysis5
-install ExRootAnalysis
+
+> install ExRootAnalysis
 
 # Introductory tutorial
 
@@ -52,8 +53,11 @@ If using mad analysis, making kinematic plots is straight forward. First, cd to 
 After this starts import the unweighted_events.lhe.gz file, define the top quark multiparticle to include both top and anti-top quarks. Then specify the observable to plot, then submit the job.
 
 > define to = t t~
+
 > import unweighted_events.lhe.gz
+
 > plot PT(to)
+
 > submit
 
 A window should appear in you browser after that is completed.
@@ -82,6 +86,7 @@ To automate the setup of multiparticles, importing of the model, and generating 
 5. cd to your output directory set earlier. run madevent and generate the events.
 
 > python2 ./bin/madevent
+
 > generate_events
 
 You can set analysis packages here to the one of your choice. Reweight and Spin are not used and should be OFF. Next, you can also edit the cards here, but if you have done that before, you can skip this. After that, the events should be generating, which takes about 10-20 minutes for me on a mid-tier laptop.
