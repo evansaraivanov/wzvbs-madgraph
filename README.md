@@ -18,7 +18,7 @@ For reference, here are the slides: https://docs.google.com/presentation/d/1k3s4
 
 I highly reccomend people using Windows to set up a linux install or linux virtual machine. 
 
-1. Install madgraph v2.6.x (https://launchpad.net/mg5amcnlo/+download). Extract the files from the tarball to your desired location, and cd into the new directory. To start madgraph use
+1. To begin, make sure you have a fortran compiler like gcc-fortran, a c++ compiler like gcc, and python version above 2.6 and below 3 installed. The installation process is dependent on the OS you are using. On linux, you can use your distributions package manager to install the compilers. Now install madgraph v2.6.x (https://launchpad.net/mg5amcnlo/+download). Extract the files from the tarball to your desired location, and cd into the new directory. To start madgraph use
 
 > python2 bin/mg5_aMC
 
@@ -26,7 +26,7 @@ You should be in the madgraph program, the terminal should display an input line
 
 > MG5_aMC>
 
-2. Make sure you have a fortran compiler, like gcc-fortran, and python2. For analysis, you will require root (https://root.cern.ch/) or madanalysis5 (https://madanalysis.irmp.ucl.ac.be/wiki/tutorials). You must install root using either a provided binary or from source before it can be used for analysis. MadAnalysis requires matplotlib to be able to make plots. Install either analysis package using the following in madgraph.
+2. For analysis, you will require root (https://root.cern.ch/) or madanalysis5 (https://madanalysis.irmp.ucl.ac.be/wiki/tutorials). You must install root using either a provided binary or from source before it can be used for analysis. If you have to build root from source, here is a list of prereqs (https://root.cern.ch/build-prerequisites), which can all be installed through a package manager. MadAnalysis requires matplotlib to be able to make plots. Install either analysis package using the following in madgraph.
 
 > install MadAnalysis5
 
